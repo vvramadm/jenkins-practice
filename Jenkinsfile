@@ -10,7 +10,7 @@ stages {
      
      steps{
 
-      sh "echo this build"
+      sh 'echo this build'
      }
 
     }
@@ -20,7 +20,7 @@ stages {
     stage('Test'){
      
      steps{
-        sh "echo this test"
+        sh 'echo this test'
      }
 
     }
@@ -29,7 +29,7 @@ stages {
    stage('Deploy'){
      
      steps{
-        sh "echo this deploy"
+        sh 'echo this deploy'
      }
 
     }
