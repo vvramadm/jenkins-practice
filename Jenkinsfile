@@ -1,6 +1,8 @@
 pipeline{
 
-agent any 
+agent {
+  label 'AGENT-1'
+} 
 
 stages {
 
@@ -34,7 +36,7 @@ stages {
 }
 
 
-}
+
 
 post{
 
@@ -47,4 +49,6 @@ post{
   failure{
     echo" this section run when pipe line failure"
   }
+}
+
 }
