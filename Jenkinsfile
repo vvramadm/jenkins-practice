@@ -32,4 +32,19 @@ stages {
 
     }
 }
+
+
+}
+
+post{
+
+  always{
+    echo" this sections run always"
+  }
+  success{
+    echo" this section run when pipeline success"
+  }
+  failure{
+    echo" this section run when pipe line failure"
+  }
 }
